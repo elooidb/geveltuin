@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geveltuinbrigade — groene gevels voor levendige straten</title>
+  <meta name="description" content="Een moderne, snelle website voor geveltuinen, workshops, onderhoud en cadeaubonnen.">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Geveltuinbrigade home">
+      <span class="brand-mark">✳</span><span>Geveltuinbrigade</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav">
+      <a href="#werkwijze">Onze geveltuin</a>
+      <a href="#aanbod">Aanbod</a>
+      <a href="#winkel">Webshop</a>
+      <a href="#brigade">De brigade</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button class="snipcart-checkout cart-button">Winkelmand <span class="snipcart-items-count">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-site="eyebrow">Groene gevels, sterke buurten</p>
+        <h1 data-site="hero_title">Maak van elke straat een mini-jungle.</h1>
+        <p class="lead" data-site="hero_text">Wij helpen bewoners, scholen en organisaties met geveltuinen die biodiversiteit, verkoeling en ontmoeting brengen.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Vraag je geveltuin aan</a>
+          <a class="btn secondary" href="#winkel">Bekijk cadeaubonnen</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Geveltuin illustratie">
+        <div class="sun"></div><div class="facade"></div><div class="plant plant-a"></div><div class="plant plant-b"></div>
+      </div>
+    </section>
+
+    <section class="trust-grid" aria-label="Kernwaarden">
+      <article><span>01</span><h3>Biologisch</h3><p>Planten en bodemzorg met respect voor mens, dier en straatleven.</p></article>
+      <article><span>02</span><h3>Duurzame materialen</h3><p>Sterke klimhulpen, lokale keuzes en onderhoud dat lang meegaat.</p></article>
+      <article><span>03</span><h3>Lage impact</h3><p>Slimme routes, weinig afval en maximale vergroening per ingreep.</p></article>
+    </section>
+
+    <section class="section split" id="werkwijze">
+      <div>
+        <p class="eyebrow">Onze geveltuin</p>
+        <h2>Van tegel tot bloeiende gevel in drie heldere stappen.</h2>
+      </div>
+      <div class="steps">
+        <div><b>1. Check</b><p>We bekijken de gevel, stoepbreedte, licht en technische randvoorwaarden.</p></div>
+        <div><b>2. Aanleg</b><p>We halen tegels uit, maken een plantgat, verbeteren de bodem en plaatsen klimhulp.</p></div>
+        <div><b>3. Groei</b><p>Je krijgt nazorgtips en optioneel onderhoud voor snoei, voeding en begeleiding.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="aanbod">
+      <p class="eyebrow">Aanbod</p>
+      <h2>Voor particulieren, buren, scholen en bedrijven.</h2>
+      <div class="cards" id="offers"></div>
+    </section>
+
+    <section class="section shop" id="winkel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Webshop</p>
+          <h2>Koop een dienst, cadeaubon of groene extra.</h2>
+        </div>
+        <button class="snipcart-checkout btn secondary">Open winkelmand</button>
+      </div>
+      <div class="products" id="products"></div>
+      <p class="small-note">Demo checkout: vervang de Snipcart API key in <code>index.html</code> door je eigen live key.</p>
+    </section>
+
+    <section class="section split dark" id="brigade">
+      <div>
+        <p class="eyebrow">De brigade</p>
+        <h2 data-site="brigade_title">Een wendbaar team voor meer groen aan de straatkant.</h2>
+      </div>
+      <p data-site="brigade_text">Onze ontwerpers, aanleggers en vrijwilligers combineren plantenkennis met praktische stadslogica. We maken gevelgroen haalbaar, betaalbaar en mooi — stap voor stap.</p>
+    </section>
+
+    <section class="section" id="faq">
+      <p class="eyebrow">FAQ</p>
+      <h2>Veelgestelde vragen</h2>
+      <div class="faq" id="faqs"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Vertel ons over je gevel.</h2>
+        <p>Gebruik dit formulier of mail rechtstreeks. Op GitHub Pages werkt dit formulier via Formspree; vul je endpoint in <code>assets/app.js</code> in.</p>
+      </div>
+      <form id="contact-form">
+        <label>Naam <input name="name" required></label>
+        <label>E-mail <input type="email" name="email" required></label>
+        <label>Ik ben <select name="type"><option>Particulier</option><option>School</option><option>Bedrijf</option><option>Buurtgroep</option></select></label>
+        <label>Bericht <textarea name="message" rows="5" required></textarea></label>
+        <button class="btn primary" type="submit">Verstuur aanvraag</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><b>Geveltuinbrigade</b><p>Groene gevels voor gezonde, sociale straten.</p></div>
+    <div><a href="/admin/">CMS login</a><a href="#top">Naar boven</a></div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script async src="https://cdn.snipcart.com/themes/v3.6.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_PUBLIC_API_KEY" data-config-modal-style="side"></div>
+</body>
+</html>

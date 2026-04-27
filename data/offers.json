@@ -1,0 +1,32 @@
+[
+  {
+    "audience": "Particulier",
+    "title": "Ik wil een geveltuin",
+    "description": "Advies, aanleg en startpakket voor een levende gevel aan je woning."
+  },
+  {
+    "audience": "Onderhoud",
+    "title": "Snoei en nazorg",
+    "description": "Seizoensgebonden snoei, plantencheck en tips om je geveltuin gezond te houden."
+  },
+  {
+    "audience": "School",
+    "title": "Groene speelplaatsrand",
+    "description": "Educatieve aanleg met leerlingen, inclusief workshop en plantuitleg."
+  },
+  {
+    "audience": "Bedrijf",
+    "title": "Representatieve groene gevel",
+    "description": "Vergroen je kantoor, winkel of gevelzone met onderhoudsplan."
+  },
+  {
+    "audience": "Buurt",
+    "title": "Groep buren",
+    "description": "Bundel meerdere gevels in één straat voor meer impact en lagere verplaatsing."
+  },
+  {
+    "audience": "Workshop",
+    "title": "Leer zelf aanleggen",
+    "description": "Hands-on sessie over plantgat, bodem, klimhulp en plantkeuze."
+  }
+]

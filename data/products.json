@@ -1,0 +1,50 @@
+[
+  {
+    "id": "gift-50",
+    "category": "Cadeaubon",
+    "name": "Cadeaubon gevelgroen €50",
+    "description": "Een groene bijdrage voor advies, planten of onderhoud.",
+    "price": 50,
+    "image": ""
+  },
+  {
+    "id": "gift-125",
+    "category": "Cadeaubon",
+    "name": "Cadeaubon geveltuin €125",
+    "description": "Ideaal als startbudget voor een nieuwe geveltuin.",
+    "price": 125,
+    "image": ""
+  },
+  {
+    "id": "workshop",
+    "category": "Workshop",
+    "name": "Workshop geveltuin",
+    "description": "Ticket voor een praktische workshop geveltuin aanleggen.",
+    "price": 35,
+    "image": ""
+  },
+  {
+    "id": "insecthotel",
+    "category": "Extra",
+    "name": "Insectenhotel",
+    "description": "Compact insectenhotel voor meer biodiversiteit aan je gevel.",
+    "price": 29,
+    "image": ""
+  },
+  {
+    "id": "snoei",
+    "category": "Onderhoud",
+    "name": "Snoeibeurt geveltuin",
+    "description": "Onderhoudsbeurt voor bestaande geveltuin binnen de regio.",
+    "price": 75,
+    "image": ""
+  },
+  {
+    "id": "advies",
+    "category": "Advies",
+    "name": "Gevelscan aan huis",
+    "description": "Korte plaatsbezoek-scan met advies voor plantkeuze en aanleg.",
+    "price": 95,
+    "image": ""
+  }
+]

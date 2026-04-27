@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USER/YOUR_REPO
+  branch: main
+  base_url: https://YOUR_OAUTH_DOMAIN
+  auth_endpoint: /auth
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "site"
+    label: "Site teksten"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "data/site.json"
+        fields:
+          - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+          - {label: "Hero titel", name: "hero_title", widget: "string"}
+          - {label: "Hero tekst", name: "hero_text", widget: "text"}
+          - {label: "Brigade titel", name: "brigade_title", widget: "string"}
+          - {label: "Brigade tekst", name: "brigade_text", widget: "text"}
+  - name: "offers"
+    label: "Aanbod"
+    file: "data/offers.json"
+    format: "json"
+    fields:
+      - label: "Items"
+        name: ""
+        widget: "list"
+        fields:
+          - {label: "Doelgroep", name: "audience", widget: "string"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Beschrijving", name: "description", widget: "text"}
+  - name: "products"
+    label: "Webshop producten"
+    file: "data/products.json"
+    format: "json"
+    fields:
+      - label: "Producten"
+        name: ""
+        widget: "list"
+        fields:
+          - {label: "ID", name: "id", widget: "string"}
+          - {label: "Categorie", name: "category", widget: "string"}
+          - {label: "Naam", name: "name", widget: "string"}
+          - {label: "Beschrijving", name: "description", widget: "text"}
+          - {label: "Prijs", name: "price", widget: "number", value_type: "float"}
+          - {label: "Afbeelding", name: "image", widget: "image", required: false}
+  - name: "faqs"
+    label: "FAQ"
+    file: "data/faqs.json"
+    format: "json"
+    fields:
+      - label: "Vragen"
+        name: ""
+        widget: "list"
+        fields:
+          - {label: "Vraag", name: "question", widget: "string"}
+          - {label: "Antwoord", name: "answer", widget: "text"}
